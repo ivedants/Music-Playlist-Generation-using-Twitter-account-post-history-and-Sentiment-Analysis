@@ -67,6 +67,14 @@ The best approach for the purpose of our project was using the NLTK Vader Sentim
   <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Song%20Lyric%20Data%20Sentiment%20Analysis%20Snap.jpg" />
 </p>
 
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Lyric%20Sentiment%20Analysis%20Snap%20-%201.jpg" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Lyric%20Sentiment%20Analysis%20Snap%202.jpg" />
+</p>
+
 ## Evaluation
 
 ### Evaluation of Twitter Sentiment Analysis
