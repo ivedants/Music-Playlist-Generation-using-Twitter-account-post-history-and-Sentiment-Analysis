@@ -53,4 +53,13 @@ We evaluated the performance of our models by testing them on the test dataset o
 
 The regular LSTM had a difficult time labelling the sentiments acurately, especially the negative sentiments. This is most likely attributed to the fact that there was no pretrained embeddings as input into the embedding layer forced learn the embedding table on it’s own. As can be observed, bi-directional LSTMs along with pre-trained GloVe embeddings had the best performance in comparison to the other models. Surprisingly, CNNs performed even worse than the baseline Naive Bayes model.
 
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Twitter%20Sentiment%20Analysis%20Evaluation%20Table.jpg" />
+</p>
+
+### Evaluation of Song Lyric Sentiment Analysis
+
+Using a random sample of 20000 songs from the Billboard Hot 100 dataset and after proper data processing and transformation, we trained and fitted the Logistic Regression models and the N-Gram CNN. Figure 2 shows the output metrics of the models, with the unigrams and bigrams LR model achieving the best results overall. The CNN’s sub-par performance is most likely due to training our own word embeddings for the model instead of using pretrained embeddings such as Word2Vec and GloVe.
+
+Finally, since all the data for the NLTK Vader method was called from an API and the lyrics were analyzed for sentiment using VADER Sentiment Analyzer, it had no specific test dataset.
 
