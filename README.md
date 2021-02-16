@@ -63,6 +63,10 @@ Following the framework of models proposed by researchers (C ̧ ano, 2018), expe
 
 The best approach for the purpose of our project was using the NLTK Vader Sentiment Analyzer. As introduced by (Hutto and Gilbert, 2014), VADER stands for “Valence Aware Dictionary and sEntiment Reasoner”. It is a lexicon and rule-based analysis tool consisting of many labeled lexical features (such as words) so it served very efficiently for the song lyrics data. Not only does it tell us about the positively or negativity score but it also tells us about how positive or negative a sentiment is, via a compound score - a normalized, weighted composite score which serves as our most useful metric for a unidimensional measure of sentiment.
 
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Song%20Lyric%20Data%20Sentiment%20Analysis%20Snap.jpg" />
+</p>
+
 ## Evaluation
 
 ### Evaluation of Twitter Sentiment Analysis
