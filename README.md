@@ -1,2 +1,3 @@
-# Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis
+# Music Playlist Generation using Twitter account post history and Sentiment Analysis
+
 In this study, we aimed to develop a playlist generation capability inspired by a user’s or entity’s social media posting history. One way to accomplish this is to use sentiment analysis to compare the distribution of tweet and song lyric sentiment polarities to generate a list of recommended songs. To optimize the efficacy of this prediction, we implemented a variety of both machine and deep learning methods to predict sentiment polarity and evaluated the trained models for both data types. Ultimately, the Bidirectional LSTM for tweets and VADER model for lyrics were implemented when integrating the two polarity scores.
