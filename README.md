@@ -63,3 +63,12 @@ Using a random sample of 20000 songs from the Billboard Hot 100 dataset and afte
 
 Finally, since all the data for the NLTK Vader method was called from an API and the lyrics were analyzed for sentiment using VADER Sentiment Analyzer, it had no specific test dataset.
 
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Lyric%20Sentiment%20Analysis%20Evaluation%20Table.jpg" />
+</p>
+
+## Implementation - Gluing it all together 
+
+For the implementation of the playlist generator, we decided to leverage the trained Bidirectional LSTM model for tweets and VADER model for lyrics due to overall better performance among the techniques. Since the VADER model reported a continuous metric between -1 and 1 and the Bidirectional LSTM produces discrete values of 0,1,2 we need to reconcile them to make an adequate comparison. So we simply averaged the difference in positive and negative polarities over the total weighting the value considering neutrals. This value is compared to each song’s compound polarity in the queried corpus and those with the smallest differences between are recommended. 
+
+As a case study, we collected and ran the end-to-end on Donald Trump’s tweet history on @therealdonaldtrump by first specifying we wanted a playlist of Coldplay songs based on general sentiment associated with account. After the polarity is passed to the song lyric VADER compound polarities, we got a playlist as in the figure below.  
