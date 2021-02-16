@@ -72,3 +72,29 @@ Finally, since all the data for the NLTK Vader method was called from an API and
 For the implementation of the playlist generator, we decided to leverage the trained Bidirectional LSTM model for tweets and VADER model for lyrics due to overall better performance among the techniques. Since the VADER model reported a continuous metric between -1 and 1 and the Bidirectional LSTM produces discrete values of 0,1,2 we need to reconcile them to make an adequate comparison. So we simply averaged the difference in positive and negative polarities over the total weighting the value considering neutrals. This value is compared to each song’s compound polarity in the queried corpus and those with the smallest differences between are recommended. 
 
 As a case study, we collected and ran the end-to-end on Donald Trump’s tweet history on @therealdonaldtrump by first specifying we wanted a playlist of Coldplay songs based on general sentiment associated with account. After the polarity is passed to the song lyric VADER compound polarities, we got a playlist as in the figure below.  
+
+<p align="center">
+  <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Generated%20Playlist%20Image.jpg" />
+</p>
+
+## Conclusion
+
+A takeaway of this work is that traditional methods can sometimes be as effective as deep learning models, as we discovered with the Naive Bayes for tweet sentiment analysis. Also, pre-training decisions, like distant supervision have an impact as well, as we saw better accuracy in the Bidirectional LSTM referenced in Cliche (2017) who included this in their model. Finally, pre-trained embeddings can save a lot of training time and the GloVe embed- dings proved to show better prediction accuracy.
+
+In this case, we conducted sentiment analysis for playlist generation, but sentiment analysis can be effectively used on social media data along with other data such as movies, advertisements, etc. Such connections and mappings can help in making state-of-the-art recommender systems in the future.
+
+## References
+
+1. Mathieu Cliche. 2017. BB_twtr at SemEval-2017 task 4: Twitter sentiment analysis with CNNs and LSTMs. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017), pages 573–580, Vancouver, Canada. Association for Computational Linguistics.
+2. C.J. Hutto and E.E. Gilbert. 2014. Vader: A parsimo- nious rule-based model for sentiment analysis of social media text. In Eighth International Conference on Weblogs and Social Media (ICWSM-14)., Ann Arbor, MI.
+3. Yoon Kim. 2014. Convolutional neural networks for sentence classification. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 1746–1751, Doha, Qatar. Association for Computational Linguistics.
+4. Jakub Nowak, Ahmet Taspinar, and Rafal Scherer. 2017. Lstm recurrent neural networks for short text and sentiment classification. pages 553–562.
+5. D. Tang, F. Wei, B. Qin, N. Yang, T. Liu, and M. Zhou. 2016. Sentiment embeddings with applications to sentiment analysis. IEEE Transactions on Knowledge and Data Engineering, 28(2):496–509.
+6. Erion C ̧ ano. 2018. Text-based sentiment analysis and music emotion recognition.
+
+## Authors 
+
+Emily Parrish (GitHub: https://github.com/emparrish417)
+Shiva Omrani
+Vedant Shrivastava (GitHub: https://github.com/ivedants; Email: ivedantshrivastava@gmail.com)
+Marcelino Velasquez (GitHub: https://github.com/MarcelinoV)
