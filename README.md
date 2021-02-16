@@ -2,6 +2,24 @@
 
 In this project, we aimed to develop a playlist generation capability inspired by a user’s or entity’s social media posting history. One way to accomplish this is to use sentiment analysis to compare the distribution of tweet and song lyric sentiment polarities to generate a list of recommended songs. To optimize the efficacy of this prediction, we implemented a variety of both machine and deep learning methods to predict sentiment polarity and evaluated the trained models for both data types. Ultimately, the Bidirectional LSTM (Long-Short Term Memory) for tweets and VADER (Valence Aware Dictionary for Sentiment Reasoning) model for lyrics were implemented when integrating the two polarity scores.
 
+## Table of Contents
+
+- [Problem Statement](#problem-statement)
+- [Introduction](#introduction)
+- [Datasets](#datasets)
+  - [Twitter Data](#twitter-data)
+  - [Song Lyric Data](#song-lyric-data)
+- [Approach](#approach)
+  - [Tweets](#tweets)
+  - [Music Lyrics](#music-lyrics)
+- [Evaluation](#evaluation)
+  - [Evaluation of Twitter Sentiment Analysis](#evaluation-of-twitter-sentiment-analysis)
+  - [Evaluation of Song Lyric Sentiment Analysis](#evaluation-of-song-lyric-sentiment-analysis)
+- [Implementation: Gluing it all together](#implementation-gluing-it-all-together)
+- [Conclusion](#conclusion)
+- [References](#references)
+  
+
 ## Problem Statement
 
 Given tweets from a person’s Twitter account, how can we estimate the general mood of a person to generate a music playlist for them? 
@@ -67,7 +85,7 @@ Finally, since all the data for the NLTK Vader method was called from an API and
   <img src="https://github.com/ivedants/Music-Playlist-Generation-using-Twitter-account-post-history-and-Sentiment-Analysis/blob/main/Lyric%20Sentiment%20Analysis%20Evaluation%20Table.jpg" />
 </p>
 
-## Implementation - Gluing it all together 
+## Implementation: Gluing it all together 
 
 For the implementation of the playlist generator, we decided to leverage the trained Bidirectional LSTM model for tweets and VADER model for lyrics due to overall better performance among the techniques. Since the VADER model reported a continuous metric between -1 and 1 and the Bidirectional LSTM produces discrete values of 0,1,2 we need to reconcile them to make an adequate comparison. So we simply averaged the difference in positive and negative polarities over the total weighting the value considering neutrals. This value is compared to each song’s compound polarity in the queried corpus and those with the smallest differences between are recommended. 
 
