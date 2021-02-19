@@ -127,4 +127,4 @@ In this case, we conducted sentiment analysis for playlist generation, but senti
 1. Emily Parrish (GitHub: https://github.com/emparrish417)
 2. Shiva Omrani (GitHub: https://github.com/shivaomrani; Email: omrani1997@gmail.com)
 3. Vedant Shrivastava (GitHub: https://github.com/ivedants; Email: ivedantshrivastava@gmail.com)
-4. Marcelino Velasquez (GitHub: https://github.com/MarcelinoV)
+4. Marcelino Velasquez (GitHub: https://github.com/MarcelinoV; Email: marcelinomv98x@gmail.com)
