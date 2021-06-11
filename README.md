@@ -41,7 +41,7 @@ We used SemEval-2017 Twitter dataset (Link: https://alt.qcri.org/semeval2017/tas
 
 ### Song Lyric Data
 
-For our ML and Deep Learning Models for Senti- ment Analysis of song lyrics, we used Billboard Hot 100 dataset from 8/2/1959 - 6/22/2020. For the NLTK VADER Sentiment Analyzer, we collected the data of 100 most popular songs of the British rock band, Coldplay by simply calling it from the Genius Lyrics API.
+For our ML and Deep Learning Models for Sentiment Analysis of song lyrics, we used Billboard Hot 100 dataset from 8/2/1959 - 6/22/2020. For the NLTK VADER Sentiment Analyzer, we collected the data of 100 most popular songs of the British rock band, Coldplay by simply calling it from the Genius Lyrics API.
 
 ## Approach
 
